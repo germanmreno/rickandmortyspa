@@ -3,7 +3,7 @@ const Header = () => {
     <div class="Header-main">
       <div class="Header-logo">
         <h1>
-        <a href="/rickandmortyspa"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Rick_and_Morty.svg/1280px-Rick_and_Morty.svg.png" alt="Logo" width="250px"/></a>
+        <a href="/rickandmortyspa"><img src="https://partner.redbubble.com/partnership-portal/client/eab637076b22c782edf0015a0ec3c686.png" alt="Logo" width="250px"/></a>
         </h1>
       </div>
       <div class="Header-nav">
