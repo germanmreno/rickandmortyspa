@@ -1,10 +1,8 @@
 const Header = () => {
-  const view = `
+    const view = `
     <div class="Header-main">
       <div class="Header-logo">
-        <h1>
-        <a href="/rickandmortyspa"><img src="https://partner.redbubble.com/partnership-portal/client/eab637076b22c782edf0015a0ec3c686.png" alt="Logo" width="250px"/></a>
-        </h1>
+        <a href="/"><img class="Header-image" src="https://icons-for-free.com/iconfiles/png/512/man+saver+super+superhero+superman+icon-1320195496238765624.png" alt="Logo" /></a>
       </div>
       <div class="Header-nav">
         <a href="#/about/">
@@ -13,7 +11,7 @@ const Header = () => {
       </div>
     </div>
   `;
-  return view;
+    return view;
 };
 
 export default Header;

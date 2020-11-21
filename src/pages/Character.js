@@ -2,26 +2,25 @@ import getHash from "../utils/getHash";
 import getData from "../utils/getData";
 
 const Character = async () => {
-  const id = getHash();
-  const character = await getData(id);
+    const id = getHash();
+    const character = await getData(id);
 
-  const view = `
+    const view = `
     <div class="Characters-inner">
       <article class="Characters-card">
-        <img src="${character.image}" alt="${character.name}"/>
+        <img src="${character.image.url}" alt="${character.name}"/>
         <h2>${character.name}</h2>
       </article>
       <article class="Characters-card">
-          <h3>Episodes: <span>${character.episode.length}</span></h3>
-          <h3>Status: <span>${character.status}</span></h3>
-          <h3>Species: <span>${character.species}</span></h3>
-          <h3>Gender: <span>${character.gender}</span></h3>
-          <h3>Origin: <span>${character.origin.name}</span></h3>
-          <h3>Last Location: <span>${character.location.name}</span></h3>
-        </article>
+      <h2 class="Character-info">SUPERHERO INFO</h2>
+      <h3><span>Aliases:</span> ${character.biography.aliases[0]}</h3>
+      <h3><span>Race</span>: ${character.appearance.race}</h3>
+      <h3><span>Alignment</span>: ${character.biography.alignment}</h3>
+      <h3><span>Publisher</span>: ${character.biography.publisher}</h3>
+    </article>
     </div>
   `;
-  return view;
+    return view;
 };
 
 export default Character;
